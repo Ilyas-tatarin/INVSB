@@ -40,10 +40,10 @@ public class RegistrationActivity extends AppCompatActivity {
         emailReg = findViewById(R.id.emailRegText);
         passReg = findViewById(R.id.passRegText);
         mAuth = FirebaseAuth.getInstance();
-        Button saveButton = (Button)findViewById(R.id.enterButton);
+        Button saveButton = (Button)findViewById(R.id.registrButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 if (emailReg.getText().toString().isEmpty() || passReg.getText().toString().isEmpty()){
                     Toast.makeText(RegistrationActivity.this, "Поле не может быть пустым", Toast.LENGTH_SHORT).show();
                 }

@@ -25,23 +25,23 @@ public class AuthorizationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authorization);
 
-        Button buttonLogin = (Button)findViewById(R.id.regButton);
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
+        emailLogin = findViewById(R.id.emailText);
+        passLogin = findViewById(R.id.passText);
+        mAuth = FirebaseAuth.getInstance();
+
+        Button buttonReg = (Button)findViewById(R.id.regButton);
+        buttonReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AuthorizationActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(AuthorizationActivity.this,RegistrationActivity.class);
                 startActivity(intent);finish();
             }
         });
 
-        emailLogin = findViewById(R.id.emailText);
-        passLogin = findViewById(R.id.passText);
-
-        mAuth = FirebaseAuth.getInstance();
         Button enterButton = (Button)findViewById(R.id.enterButton);
         enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 if (emailLogin.getText().toString().isEmpty() || passLogin.getText().toString().isEmpty()){
                     Toast.makeText(AuthorizationActivity.this, "Поле не может быть пустым", Toast.LENGTH_SHORT).show();
                 }
