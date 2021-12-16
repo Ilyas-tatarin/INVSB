@@ -62,13 +62,25 @@
         app:layout_constraintTop_toBottomOf="@+id/inputLogin" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="115dp"
+        android:id="@+id/regButton"
+        android:layout_width="232dp"
+        android:layout_height="49dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="115dp"
         android:backgroundTint="#0055D4"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="@+id/enterButton"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/enterButton"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="230dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#0057DC"
         android:text="Войти"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
