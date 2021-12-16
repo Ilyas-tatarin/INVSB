@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Tinkoff">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="380dp"
+        app:srcCompat="@drawable/tinicon"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="-2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
