@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.INVSB">
         <activity
-            android:name=".MainActivity"
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthorizationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
