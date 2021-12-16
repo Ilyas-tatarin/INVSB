@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class Tinkoff extends AppCompatActivity {
     Button button;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,15 @@ public class Tinkoff extends AppCompatActivity {
         setContentView(R.layout.activity_tinkoff);
 
         button = (Button) findViewById(R.id.button);
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i;
+                i = new Intent();
+                startActivity(i);
+            }
+        });
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
