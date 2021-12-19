@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1040146991440",
+    "project_id": "invsb-ddc99",
+    "storage_bucket": "invsb-ddc99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040146991440:android:77a5ce58bbdd2c8c720455",
+        "android_client_info": {
+          "package_name": "com.example.invsb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040146991440-fjrd6e6k1j4bjjo7ede8l7raa4if342d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBezZtxOdBTMXlvZUkJdApFTNdN5Oe1wFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040146991440-fjrd6e6k1j4bjjo7ede8l7raa4if342d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

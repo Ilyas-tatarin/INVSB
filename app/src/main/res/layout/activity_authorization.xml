@@ -34,21 +34,21 @@
         app:layout_constraintTop_toBottomOf="@+id/imageWelcome" />
 
     <EditText
-        android:id="@+id/inputLogin"
+        android:id="@+id/emailText"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="38dp"
         android:ems="10"
-        android:hint="Логин"
+        android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/passText"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginStart="38dp"
@@ -59,18 +59,30 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="115dp"
+        android:id="@+id/regButton"
+        android:layout_width="232dp"
+        android:layout_height="49dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="115dp"
         android:backgroundTint="#0055D4"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="@+id/enterButton"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/enterButton"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="230dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#0057DC"
         android:text="Войти"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/passText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
