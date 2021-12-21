@@ -24,8 +24,8 @@ public class Tinkoff extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i;
-                i = new Intent();
-                startActivity(i);
+                i = new Intent(Tinkoff.this, AuthorizationActivity.class);
+                startActivity(i); finish();
             }
         });
         button.setOnClickListener(new View.OnClickListener() {

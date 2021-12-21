@@ -51,8 +51,8 @@ public class AuthorizationActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if(task.isSuccessful()) {
-                                        Intent intent = new Intent(AuthorizationActivity.this, MainActivity.class);
-                                        startActivity(intent); finish();
+                                        Intent intent = new Intent(AuthorizationActivity.this, Tinkoff.class);
+                                        startActivity(intent);
                                     }
                                     else {
                                         Toast.makeText(AuthorizationActivity.this, "Ошибка", Toast.LENGTH_SHORT).show();

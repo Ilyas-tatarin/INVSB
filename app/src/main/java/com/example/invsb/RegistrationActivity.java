@@ -52,8 +52,8 @@ public class RegistrationActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()) {
-                                Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-                                startActivity(intent); finish();
+                                Intent intent = new Intent(RegistrationActivity.this, Tinkoff.class);
+                                startActivity(intent);
                             }
                             else {
                                 Toast.makeText(RegistrationActivity.this, "Ошибка", Toast.LENGTH_SHORT).show();
